@@ -1,0 +1,14 @@
+{
+  "name": "apollo-sentry-link",
+  "version": "1.0.0",
+  "description": "An Apollo Link to record GraphQL queries as Sentry breadcrumbs",
+  "main": "src/index.js",
+  "repository": "https://github.com/Haegin/apollo-sentry-link",
+  "author": "Harry Mills <harry@portermills.net>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@sentry/browser": "^5.6.3",
+    "apollo-link": "^1.2.13"
+  }
+}
