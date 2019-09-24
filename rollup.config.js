@@ -1,6 +1,8 @@
-const resolve = require('rollup-plugin-node-resolve')
+import resolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
+import babel from 'rollup-plugin-babel'
 
-module.exports = {
+export default {
   input: './src/index.js',
   output: {
     name: 'apolloSentryLink',
@@ -10,6 +12,14 @@ module.exports = {
   plugins: [
     resolve({
       mainFields: ['browser'],
+    }),
+    commonjs({
+      namedExports: {
+        'apollo-link': ['ApolloLink'],
+      },
+    }),
+    babel({
+      exclude: 'node_modules/**',
     }),
   ],
 }
