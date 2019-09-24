@@ -1,6 +1,6 @@
 {
   "name": "apollo-sentry-link",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "An Apollo Link to record GraphQL queries as Sentry breadcrumbs",
   "main": "bundle.js",
   "repository": "https://github.com/Haegin/apollo-sentry-link",
